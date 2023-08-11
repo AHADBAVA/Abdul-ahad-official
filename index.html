@@ -35,6 +35,7 @@
       </div>
       <nav id="navbar" class="nav-menu navbar">
         <ul>
+          <button id="btn-cv" class="btn-primary btn"  onclick="downloadFile()"><i class='bx bxs-file-pdf'></i>Download CV</button>
           <li><a href="#hero" class="nav-link scrollto active"><i class='bx bxs-home'></i></i> <span>Home</span></a>
           </li>
           <li><a href="#about" class="nav-link scrollto"><i class='bx bxs-user-rectangle'></i> <span>About</span></a>
@@ -116,7 +117,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
             <div class="count-box">
               <i class='bx bx-smile'></i>
-              <span data-purecounter-start="0" data-purecounter-end="100%" data-purecounter-duration="1"
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
                 class="purecounter"></span>
               <p><strong>Happy Clients</strong></p>
             </div>
@@ -448,6 +449,16 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    function downloadFile() {
+        var link = document.createElement("a");
+        link.download = "Abdul ahad.S.pdf"; // Replace with your desired filename
+        link.href = "Abdul ahad.S.pdf"; // Replace with the actual file path
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
 </body>
 
 </html>
