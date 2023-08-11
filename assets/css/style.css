@@ -951,6 +951,17 @@ section {
 .img-fluid:hover{
   transform: scale(1.2);
 }
+#btn-cv{
+  margin-left:16px;
+  margin-bottom:20px;
+  padding:10px;
+  background-color:rgb(56, 56, 56);
+  border:1px solid rgb(255, 255, 255);
+}
+#btn-cv:active{
+  transform: translateY(3px);
+  box-shadow:1px 1px 1px 5px  rgb(255, 255, 255);
+}
 
    /* Light mode styles */
     body {
@@ -991,14 +1002,8 @@ section {
   }
 
 
-  #facts,
-  #skills,
-  #hero,
-  #about,
-  #resume,
-  #portfolio,
-  #contact,
-  #sponsor {
+
+  #hero{
       /* Your regular styling here */
       transition: filter 0.3s ease; /* Apply smooth transition for the blur effect */
   }
