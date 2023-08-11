@@ -261,11 +261,3 @@
 
 })()
 
-document.getElementById("blurButton").addEventListener("click", function() {
-  var sectionIds = ["hero", "about", "resume", "portfolio", "contact", "sponsor","skills","facts"];
-  
-  sectionIds.forEach(function(sectionId) {
-      var section = document.getElementById(sectionId);
-      section.classList.toggle("blur");
-  });
-});
