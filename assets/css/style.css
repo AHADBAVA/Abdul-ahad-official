@@ -1008,6 +1008,3 @@ section {
       transition: filter 0.3s ease; /* Apply smooth transition for the blur effect */
   }
 
-.blur {
-    filter: blur(5px); /* Apply blur effect */
-}
