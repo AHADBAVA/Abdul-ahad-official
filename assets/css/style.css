@@ -55,6 +55,19 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+.custom-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--cursor-border-color, #333); /* Default border color */
+  background-color: var(--cursor-bg-color, transparent); /* Default background color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  z-index: 9999;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
