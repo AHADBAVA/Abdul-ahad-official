@@ -459,49 +459,6 @@
         document.body.removeChild(link);
     }
 </script>
-   <script>
-       // script.js (using older JavaScript syntax)
-var cursor = document.querySelector('.custom-cursor');
-var hoverElements = document.querySelectorAll('h1');
-
-document.addEventListener('mousemove', function(e) {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
-});
-
-for (var i = 0; i < hoverElements.length; i++) {
-  hoverElements[i].addEventListener('mouseenter', function() {
-    cursor.style.transform = 'scale(1.5)';
-  });
-
-  hoverElements[i].addEventListener('mouseleave', function() {
-    cursor.style.transform = 'scale(1)';
-  });
-}
-
-document.addEventListener('mousedown', function(e) {
-  if (e.button === 0) {
-    cursor.style.border = 'fff';
-    cursor.style.background = 'rgba(0, 238, 255)';
-    cursor.style.transform = 'scale(1)';
-    cursor.style.width = '20px';
-    cursor.style.height = '20px';
-  }
-});
-
-document.addEventListener('mouseup', function() {
-  cursor.style.border = '2px solid #ffff';
-  cursor.style.background = 'none';
-  cursor.style.width = '10px';
-  cursor.style.height = '10px';
-});
-
-// Set cursor colors using JavaScript
-document.documentElement.style.setProperty(0, 238, 255);
-document.documentElement.style.setProperty((115, 117, 118));
-
-
-    </script>
 </body>
 
 </html>
